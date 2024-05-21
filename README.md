@@ -1,79 +1,46 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# **News Feed App**
 
-# Getting Started
+> *This is a react native app which fetches newsfeed from api*
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+Here’s a detailed guide to create a new React Native project that includes screens for News Feed, Comments, and Likes, and sets up conditional rendering for different types of content. Additionally, it fetches data from Google News, allows users to like, comment, and share posts.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Integrating Redux and Redux-Saga into a React Native project involves setting up the necessary packages and configuring them to manage the application's state and handle side effects. Here’s a step-by-step guide to create a news feed application that includes a News Feed Screen, Comment Screen, and Likes Screen with Redux and Redux-Saga:
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Step 1: Create a New Project
+First, create a new React Native project:
 
-```bash
-# using npm
-npm start
+### Step 2: Install Required Libraries
+Install necessary libraries for Redux, Redux-Saga, and navigation:
 
-# OR using Yarn
-yarn start
-```
+### Step 3: Set Up Navigation
+Set up React Navigation in your App.js:
 
-## Step 2: Start your Application
+### Step 4: Set Up Redux and Redux-Saga
+Create the necessary files and folders for Redux and Redux-Saga.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### Step 5: Create Screens
+Create the necessary screens in the src/screens directory.
 
-### For Android
+### Step 6: Run Your Application
+Finally, run your application:
 
-```bash
-# using npm
-npm run android
+### Explanation
+Redux and Redux-Saga Setup: The store is configured with Redux-Saga middleware. The newsReducer manages the state of the news articles. The newsSaga handles fetching news articles from the API.
+### News Feed Screen: 
+Fetches data from the Google News API, renders each news item conditionally with text and image, and provides actions to like, comment, and share.
+### Comment Screen: 
+Allows users to add and view comments.
+### Likes Screen:
+ Allows users to like a post and shows the number of likes.
+### Navigation:
+ Uses React Navigation to switch between different screens.
+ 
+By following these steps, you can create a React Native application that integrates Redux and Redux-Saga, displays a news feed, and allows users to like, comment, and share posts.
 
-# OR using Yarn
-yarn android
-```
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
